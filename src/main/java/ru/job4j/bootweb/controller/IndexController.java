@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ru.job4j.bootweb.model.Accident;
-import ru.job4j.bootweb.service.AccidentServiceImpl;
+import ru.job4j.bootweb.service.AccidentService;
 
 /**
  * Class IndexController.
@@ -21,7 +21,7 @@ import ru.job4j.bootweb.service.AccidentServiceImpl;
 @RequiredArgsConstructor
 public class IndexController {
 
-    private final AccidentServiceImpl service;
+    private final AccidentService service;
 
     @GetMapping(path = "/")
     public String showAccidents(Model model) {

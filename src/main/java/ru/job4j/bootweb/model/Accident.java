@@ -25,8 +25,13 @@ public class Accident {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(nullable = false)
     private String name;
+
+    @Column(nullable = false)
     private String text;
+
+    @Column(nullable = false)
     private String address;
 
     public Accident() {

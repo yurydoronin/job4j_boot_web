@@ -2,8 +2,6 @@ package ru.job4j.bootweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
  * Class Application.
@@ -13,12 +11,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * @since 17.05.2020
  */
 @SpringBootApplication
-public class SpringBootWebApplication extends SpringBootServletInitializer {
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(SpringBootWebApplication.class);
-    }
+public class SpringBootWebApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootWebApplication.class, args);
